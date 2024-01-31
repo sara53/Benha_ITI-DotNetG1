@@ -4,7 +4,7 @@
  *  == default values
  *  ==Spread Operator
  *  == rest Params
- * == Primitve Datatype -- refernce datatype
+ * == primitive Datatype -- refernce datatype
  *  == String API
  *  == Arrow Functions
  *  == Array APIs
