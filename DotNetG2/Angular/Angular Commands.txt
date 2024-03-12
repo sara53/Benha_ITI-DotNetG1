@@ -1,0 +1,7 @@
+1- install Node js
+2- node -v
+3- npm i -g typescript 
+4- tsc -v
+ --------------------------
+==
+1- tsc filename.ts -w
