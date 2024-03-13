@@ -5,3 +5,15 @@
  --------------------------
 ==
 1- tsc filename.ts -w
+
+-------------------Angular Setup------------------
+1- npm i -g @angular/cli@16
+2- ng v 
+3- ng new projectName
+4- ng serve -o
+(npm start)
+
+---------------------------------------------
+to generate new component
+------------------------------------------------
+ 1- ng g c componentName --skip-tests
