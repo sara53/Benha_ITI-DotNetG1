@@ -1,0 +1,24 @@
+1- Component Communication
+    -- One Way Binding  
+        -- interpolation // Done
+        -- attribute Binding // Done
+    
+    -- Two Way Binding
+        -- Normal Way // Done
+        -- FormsModule // Done
+
+-- Event Binding // Done
+-- set refernce  on element // done
+
+
+2- Directives
+    -- Structural Directives
+        == *ngFor
+        == *ngIf
+        == *ngSwitch
+
+-- ng-container
+-- ng-template
+
+    -- Attribute Directives
+    -- Component Directives

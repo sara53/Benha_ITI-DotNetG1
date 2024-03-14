@@ -1,0 +1,33 @@
+<div class="bg-dark text-light p-5 text-center">
+  <h1 #dotnet>Two Way Binding</h1>
+  <div class="container">
+    <!-- Normal Way -->
+    <input
+      #myInput
+      (input)="getData(myInput)"
+      type="text"
+      class="form-control"
+      placeholder="Enter Your Data"
+    />
+    <button (click)="showData(dotnet)" class="btn btn-danger mt-2">
+      Show Data
+    </button>
+    <!-- <h1 class="mt-2 text-warning">Your Data : {{ inputData }}</h1>
+    <hr />
+    <input
+      name="studentData"
+      type="text"
+      class="form-control"
+      placeholder="Enter Your Data"
+      [(ngModel)]="myTemp"
+    />
+    <h2 class="mt-2 text-danger">Your Data : {{ myTemp }}</h2>
+    <hr />
+    <select name="choose" id="" [(ngModel)]="selectValue">
+      <option>Html</option>
+      <option>Css</option>
+      <option>JS</option>
+    </select>
+    <p class="lead mt-2 text-warning">Your Fav Course is : {{ selectValue }}</p> -->
+  </div>
+</div>

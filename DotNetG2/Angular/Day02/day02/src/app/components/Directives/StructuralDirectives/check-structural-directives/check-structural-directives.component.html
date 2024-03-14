@@ -1,0 +1,58 @@
+<div class="bg-dark text-light p-5 text-center">
+  <h1>Structural Directives</h1>
+  <!-- *ngIf -->
+  <!-- <div class="container">
+    <div *ngIf="flag; else myDiv" class="bg-light text-dark p-4 rounded m-2">
+      <h1>Welcome Dotnet Track</h1>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum eius
+        possimus exercitationem sed est maiores sint reprehenderit tempore
+        autem, id vel iste. Voluptates alias quo possimus, corrupti culpa iure
+        eius.
+      </p>
+    </div>
+
+    <ng-template #myDiv>
+      <div class="alert alert-info">
+        <h2>Hello From ITI</h2>
+      </div>
+    </ng-template>
+  </div> -->
+
+  <!-- *ngFor -->
+  <!-- <ng-container *ngIf="flag">
+    <div
+      *ngFor="let track of itiTracks; let i = index"
+      class="bg-light text-dark p-2 rounded m-2"
+    >
+      <h2 class="bg-secondary p-2">{{ i + 1 }}- {{ track }}</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+        necessitatibus rem maxime, eum quo neque pariatur tempore nam voluptates
+        magnam labore autem in corporis. Nesciunt ducimus aut architecto
+        excepturi doloremque!
+      </p>
+    </div>
+  </ng-container>
+
+  <select class="d-block">
+    <option *ngFor="let track of itiTracks">{{ track }}</option>
+  </select> -->
+
+  <ng-container [ngSwitch]="color">
+    <div *ngSwitchCase="'blue'" class="bg-primary p-2 rounded m-2">
+      <p>Your Fav Color is blue</p>
+    </div>
+    <div *ngSwitchCase="'orange'" class="bg-warning p-2 rounded m-2">
+      <p>Your Fav Color is orange</p>
+    </div>
+    <div *ngSwitchCase="'green'" class="bg-success p-2 rounded m-2">
+      <p>Your Fav Color is green</p>
+    </div>
+    <div *ngSwitchDefault class="bg-light text-dark p-2 rounded m-2">
+      <p>You don't have any fav Colors</p>
+    </div>
+  </ng-container>
+
+  <button (click)="toggle()" class="btn btn-danger">Toggle</button>
+</div>

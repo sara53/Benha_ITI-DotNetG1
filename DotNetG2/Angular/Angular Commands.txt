@@ -17,3 +17,5 @@
 to generate new component
 ------------------------------------------------
  1- ng g c componentName --skip-tests
+------------------------------------------
+1- npm i bootstrap
