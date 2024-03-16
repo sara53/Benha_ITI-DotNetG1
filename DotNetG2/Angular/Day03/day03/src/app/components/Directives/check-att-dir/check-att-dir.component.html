@@ -1,0 +1,43 @@
+<div class="bg-dark text-light p-5 text-center">
+  <h1>Attribute Directives</h1>
+  <div class="container">
+    <!-- <p class="mt-4 p-2" [style.background]="flag ? 'red' : 'green'">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis rem in
+      harum voluptatibus, fugiat quasi eos nulla a eum repellendus minima fugit
+      laboriosam dolorem eaque vitae, voluptates eius facere quas.
+    </p>
+    <p
+      class="mt-4"
+      [ngStyle]="{
+        color: flag ? '#fff' : 'red',
+        backgroundColor: flag ? 'red' : 'green',
+        padding: '40px'
+      }"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis rem in
+      harum voluptatibus, fugiat quasi eos nulla a eum repellendus minima fugit
+      laboriosam dolorem eaque vitae, voluptates eius facere quas.
+    </p>
+    -->
+    <!-- class -->
+    <!-- <p [class.successClass]="flag">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis,
+      vero optio qui inventore cumque unde consequuntur odio velit iste
+      aspernatur quisquam perspiciatis! Temporibus aperiam tempora magnam rem
+      velit iusto.
+    </p> -->
+    <p
+      [ngClass]="{
+        'bg-success p-4 ': flag,
+        'bg-warning text-dark p-3 rounded': !flag,
+        
+      }"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veritatis,
+      vero optio qui inventore cumque unde consequuntur odio velit iste
+      aspernatur quisquam perspiciatis! Temporibus aperiam tempora magnam rem
+      velit iusto.
+    </p>
+    <button (click)="toggle()" class="btn btn-danger">Toggle</button>
+  </div>
+</div>

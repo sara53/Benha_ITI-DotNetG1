@@ -1,0 +1,13 @@
+1- Directives
+    -- Attribute Directives
+        -- [class.className]
+        -- [ngClass]
+        -- [style.propName]
+        -- [ngStyle]
+
+-- Component Interactions
+    -- Pass Data from parent to child
+    -- pass data from child to parent
+    -- pass data from child to child
+
+-- Angular Life Cycle

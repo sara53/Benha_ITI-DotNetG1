@@ -1,0 +1,11 @@
+.successClass{
+    background-color: blueviolet;
+    padding: 20px;
+    font-style: italic;
+}
+
+.failClass{
+    background-color: orangered;
+    padding: 10px;
+  
+}

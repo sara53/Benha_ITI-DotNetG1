@@ -1,0 +1,12 @@
+<div class="bg-light text-center p-5">
+  <h1>Our Products</h1>
+  <div class="container">
+    <div
+      *ngFor="let product of productsList"
+      class="lead bg-dark m-2 rounded p-3 text-warning"
+    >
+      <h1>Id : {{ product.id }}</h1>
+      <p>Name : {{ product.name }}</p>
+    </div>
+  </div>
+</div>
