@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductStaticService } from 'src/app/services/product-static.service';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-products',
@@ -8,13 +9,26 @@ import { ProductStaticService } from 'src/app/services/product-static.service';
 })
 export class ProductsComponent implements OnInit {
   products: any;
-  constructor(public x: ProductStaticService) {}
+  constructor(public x: ProductService) {}
   ngOnInit(): void {
-    this.products = this.x.getAllProducts();
-    console.log(this.products);
+    this.x.getAllProducts().subscribe({
+      next: (data) => {
+        this.products = data;
+      },
+      error: (error) => {
+        console.log(error);
+      },
+    });
   }
 
   deleteProductHandler(id: any) {
-    this.products = this.x.deleteProduct(id);
+    this.x.deleteProduct(id).subscribe({
+      next: (data) => {
+        this.products = this.products.filter(
+          (product: any) => product.id != id
+        );
+      },
+      error: () => {},
+    });
   }
 }
